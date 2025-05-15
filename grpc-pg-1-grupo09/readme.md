@@ -6,7 +6,7 @@
 - Sanchez Rocio
 - Schupiak Andres
 
-## Instrucciones
+## Instrucciones de ejecucion Parte 1
 1. **Antes de comenzar, asegurarse de tener**:
 - Go instalado (go version)
 - protoc instalado (Protocol Buffers Compiler)
