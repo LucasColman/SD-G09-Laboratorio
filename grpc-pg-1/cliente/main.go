@@ -14,10 +14,12 @@ import (
 )
 
 func main() {
-	conn, err := grpc.Dial("localhost:8000", grpc.WithTransportCredentials(insecure.NewCredentials()))
+	conn, err := grpc.NewClient("localhost:8000", grpc.WithTransportCredentials(insecure.NewCredentials()))
+	
 	if err != nil {
 		log.Fatalf("No se pudo conectar: %v", err)
 	}
+	
 	defer conn.Close()
 
 	c := proto.NewServicioClient(conn)
